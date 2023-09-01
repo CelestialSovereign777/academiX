@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CTU-Buddy | Discussions</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1 class="header-title">CTU-Buddy</h1>
+    <br>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="timetable.html">Timetable</a></li>
+        <li><a href="discussions.html">Discussion</a></li>
+        <li><a href="share-resources.html">Share Resources</a></li>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="contact-us.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="discussion-form">
+      <h2>Ask a Question</h2>
+      <form>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required maxlength="32">
+
+        <label for="question">Your Question:</label>
+        <textarea id="question" name="question" rows="4" required></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <section class="discussion-threads">
+      <h2>Discussion Threads</h2>
+      <div class="thread">
+        <div class="user-info">
+          <img src="Images/user1.jpg" alt="User1">
+          <p>Bart Terry</p>
+        </div>
+        <div class="thread-content">
+          <h3>Question:</h3>
+          <p>Are the robotics classes taken in Class 3 or 4?</p>
+          <a href="#" class="expand-btn">View Replies (1)</a>
+          <div class="replies">
+            <div class="user-info">
+              <img src="Images/user2.jpg" alt="User2">
+              <p>Jane Doe</p>
+            </div>
+            <div class="reply-content">
+              <p>As far as I know, robotics classes are taken in Class 4.</p>
+            </div>
+          </div>
+          <div class="mod-tools">
+            <a href="#" class="report-btn">Report</a>
+            <a href="#" class="delete-btn">Delete</a>
+          </div>
+          <form class="reply-form">
+            <label for="reply">Your Reply:</label>
+            <textarea class="reply-textarea" rows="2"></textarea>
+            <button type="submit">Submit Reply</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="thread">
+        <div class="user-info">
+          <img src="Images/user2.jpg" alt="User2"> 
+          <p>Moses Joseph</p>
+        </div>
+        <div class="thread-content">
+          <h3>Question:</h3>
+          <p>Will the campus be open next week after the public holiday?</p>
+          <a href="#" class="expand-btn">View Replies (0)</a>
+          <div class="replies"></div>
+          <div class="mod-tools">
+            <a href="#" class="report-btn">Report</a>
+            <a href="#" class="delete-btn">Delete</a>
+          </div>
+          <form class="reply-form">
+            <label for="reply">Your Reply:</label>
+            <textarea class="reply-textarea" rows="2"></textarea>
+            <button type="submit">Submit Reply</button>
+          </form>
+        </div>
+      </div>
+      <!-- ... Add more existing threads as needed ... -->
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 CTU-Buddy | All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
